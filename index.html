@@ -84,6 +84,10 @@
                   <span>App Development</span><br />Building Native Android
                   Applications
                 </li>
+                <li>
+                  <span>App Development</span><br />Building Native Android
+                  Applications
+                </li>
               </ul>
             </div>
 
@@ -255,17 +259,30 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p>
-              <i class="fa-solid fa-paper-plane"></i> Dheerajbhatt301@gmail.com
+              <i class="fa-solid fa-paper-plane"></i> iiit.una.2024@gmail.com
             </p>
             <p><i class="fa-solid fa-square-phone"></i> 9528418686</p>
             <div class="social-icons">
-              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/Iam_AmanBhatt"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/iamamanbhatt/"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/iamamanbhatt/"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/bhattaman0001/"><i class="fa-brands fa-github"></i></a>
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Iam_AmanBhatt"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iamamanbhatt/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/iamamanbhatt/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/bhattaman0001/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
-            <a href="https://drive.google.com/file/d/1OK82G-tQLB8I_SqhjqouDfikxcRtNv-p/view" download class="btn btn2"
+            <a
+              href="https://drive.google.com/file/d/1OK82G-tQLB8I_SqhjqouDfikxcRtNv-p/view"
+              download
+              class="btn btn2"
               >Download My Resume</a
             >
           </div>
@@ -321,7 +338,8 @@
     </script>
 
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwNt5sJ3IJzY-FtujNBXQ_34-u3102VrBCbItkikpO3TOria9tceTh13DNZ0NuPDs8cxA/exec";
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwNt5sJ3IJzY-FtujNBXQ_34-u3102VrBCbItkikpO3TOria9tceTh13DNZ0NuPDs8cxA/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
 
@@ -329,11 +347,11 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
